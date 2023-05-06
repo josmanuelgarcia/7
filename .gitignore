@@ -1,24 +1,30 @@
-# Compiled class file
-*.class
+package practica7;
 
-# Log file
-*.log
+import java.util.Scanner;
 
-# BlueJ files
-*.ctxt
+public class Practica7 {
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+    public static void main(String[] args) {
+         int a,b,c,d,e;
+        
+         
+         Scanner entrada = new Scanner(System.in);
+        
+        
+        System.out.print("Ingresa el total de kilometros conducidos por dia:");
+          a = entrada.nextInt();
+        System.out.print("Ingresa el costo por litros de gasolina:");
+          b = entrada.nextInt();
+        System.out.print("Ingresa el promedio de kilometros por litro:");
+          c = entrada.nextInt();
+        System.out.print("Ingresa las cuotas de estacionamiento por dia:");
+          d = entrada.nextInt();
+        System.out.print("peaje por dia:");
+          e = entrada.nextInt();
+        
+         
+        System.out.printf("%s %f", "El costo diario de conducir su automovil es:", ((a/c)*b*1.0)+d+e);
+    }
+    
+}
